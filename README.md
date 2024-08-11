@@ -1057,32 +1057,6 @@ bcdfghj
 ubcdfghj
 ```
 awk -f nc.awk data.dat
-
-## OUTPUT
-total characters 75 Number of Lines are 10 No of Words count: 10 cat > palindrome.sh
-
-#num=545
-echo "Enter the number"
-read num
-s=0
-rev=""
-temp=$num
-while [ $num -gt 0 ]
-do
-	# Get Remainder
-	s=$(( $num % 10 ))
-	# Get next digit
-	num=$(( $num / 10 ))
-	# Store previous number and
-	# current digit in reverse
-	rev=$( echo ${rev}${s} )
-done
-if [ $temp -eq $rev ];
-then
-	echo "Number is palindrome"
-else
-	echo "Number is NOT palindrome"
-fi
 ## OUTPUT
 Enter the number 121 Number is palindrome Enter the number 69 Number is NOT palindrome
 ```
